@@ -1,0 +1,20 @@
+.header {
+	height: 100vh;
+	/* Висота секції на весь екран */
+}
+
+.header {
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	margin: 0 auto;
+	/* Центрування по горизонталі */
+	padding: 0 20px;
+	/* Внутрішні відступи */
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+}

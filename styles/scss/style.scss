@@ -1,0 +1,20 @@
+@import "__nullstyle";
+@import "__header";
+@import "__logo";
+@import "__buttons";
+@import "__contact";
+@import "__about";
+@import "__map";
+@import "__menu";
+@import "__footer";
+
+/* Загальні стилі */
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	min-height: 100vh;
+	overflow: auto;
+	width: 100%;
+}

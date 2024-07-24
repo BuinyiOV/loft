@@ -1,0 +1,30 @@
+.about-us {
+	width: 100%;
+	margin: 20vh 0;
+	/* Відступ зверху для розділу "Про нас" */
+	background-color: #ffffff;
+	/* Фоновий колір */
+	border-radius: 5px;
+	/* Радіус кутів */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	/* Тінь блоку */
+	text-align: center;
+	/* Вирівнювання тексту по центру */
+	padding: 20vh 10% 10vh;
+}
+
+.about-us h2 {
+	margin-bottom: 10px;
+	/* Відступ знизу заголовку "Про нас" */
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.about-us p {
+	line-height: 1.6;
+	/* Міжрядковий інтервал */
+	margin: 10px;
+	/* Зовнішні відступи */
+	font-size: 24px;
+}
