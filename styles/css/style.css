@@ -254,7 +254,7 @@ section {
   width: 100%;
   margin: 20vh 0;
   /* Відступ зверху для розділу "Про нас" */
-  background-color: rgb(253, 195, 195);
+  background: rgb(18, 177, 31);
   /* Фоновий колір */
   border-radius: 5px;
   /* Радіус кутів */
@@ -267,7 +267,7 @@ section {
 
 @media (prefers-color-scheme: dark) {
   .about-us {
-    background-color: rgb(237, 8, 8);
+    background: rgb(237, 8, 8);
   }
 }
 .about-us h2 {
