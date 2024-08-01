@@ -2,12 +2,9 @@
 	width: 100%;
 	align-items: center;
 	text-align: center;
-	background-color: #ffffff;
-	/* Фоновий колір */
+	background-color: #f9f9f9;
 	margin: 0 auto;
-	/* Центрування по горизонталі */
 	padding: 0 20px;
-	/* Внутрішні відступи */
 	box-sizing: border-box;
 
 	display: flex;
@@ -17,15 +14,10 @@
 }
 
 .contact-info__footer{
-			/* Відступ зверху для кнопок і контактної інформації */
 			display: flex;
-			/* Відображати властивість блоку */
 			flex-wrap: wrap;
 			flex-direction: row;
-			/* Напрямок рядка */
 			align-items: center;
-			/* Вирівнювати по центру */
 			justify-content: space-evenly;
-			/* Рівномірний розподіл між елементами */
 			width: 100%;
 }

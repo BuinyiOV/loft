@@ -3,26 +3,19 @@
 	flex-direction: row;
 	flex-wrap: wrap-reverse;
 	align-items: center;
-	/* Вирівнювати по центру */
 	justify-content: space-evenly;
-	/* Рівномірний розподіл між елементами */
 	width: 100%;
 	margin: 20vh 0;
 	text-align: center;
 	padding: 20vh 10% 10vh;
-		background-color: #ffffff;
-	/* Фоновий колір */
+	background-color: #f9f9f9;
 	border-radius: 5px;
-	/* Радіус кутів */
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-	/* Тінь блоку */
 }
 
 .map-text {
 	line-height: 1.6;
-	/* Міжрядковий інтервал */
 	margin: 10px;
-	/* Зовнішні відступи */
 	padding: 20px;
 }
 

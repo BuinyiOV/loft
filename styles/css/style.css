@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html,
 body,
 div,
@@ -38,7 +37,6 @@ section {
 
 .header {
   height: 100vh;
-  /* Висота секції на весь екран */
 }
 
 .header {
@@ -46,9 +44,7 @@ section {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  /* Центрування по горизонталі */
   padding: 0 20px;
-  /* Внутрішні відступи */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -66,6 +62,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: white;
 }
 
 .logo {
@@ -88,11 +85,6 @@ section {
   background-color: white;
 }
 
-@media (prefers-color-scheme: dark) {
-  buttons {
-    background-color: black;
-  }
-}
 .btn {
   min-width: 20vw;
   padding: 10px 20px;
@@ -104,7 +96,7 @@ section {
   font-weight: 700;
   font-size: 3vh;
   text-align: center;
-  background-color: white;
+  background-color: #f9f9f9;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -165,7 +157,6 @@ section {
     width: 40px;
     height: 26px;
     margin: 30px auto;
-    color: #000;
   }
   .burger-button::before,
   .burger-button::after {
@@ -180,7 +171,7 @@ section {
   }
   .burger-button::before {
     top: 0;
-    box-shadow: 0 11px 0 #000;
+    box-shadow: 0 11px 0 #000000;
     transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
   }
   .burger-button::after {
@@ -201,78 +192,49 @@ section {
 }
 .contact-info {
   margin-top: 80vh;
-  /* Відступ зверху для кнопок і контактної інформації */
   display: flex;
-  /* Відображати властивість блоку */
   flex-wrap: wrap;
   flex-direction: row;
-  /* Напрямок рядка */
   align-items: center;
-  /* Вирівнювати по центру */
   justify-content: space-evenly;
-  /* Рівномірний розподіл між елементами */
   width: 100%;
 }
 
 .btn-contact {
   min-width: 20vw;
-  /* Ширина кнопок */
   padding: 10px 20px;
-  /* Внутрішні відступи */
   margin: 10px;
-  /* Зовнішні відступи */
   border: none;
-  /* Без рамки */
   text-decoration: none;
-  /* Без підкреслення */
   color: #000000;
-  /* Колір тексту */
   text-wrap: nowrap;
   font-weight: 700;
   font-size: 3vh;
   text-align: center;
-  /* Вирівнювання тексту по центру */
-  background-color: white;
-  /* Фоновий колір */
+  background-color: #f9f9f9;
   border-radius: 5px;
-  /* Радіус кутів */
   cursor: pointer;
-  /* Змінний курсор */
   transition: background-color 0.3s;
-  /* Плавний перехід */
   box-sizing: border-box;
 }
 
 .btn-contact:hover {
   background-color: black;
-  /* Фоновий колір при наведенні */
   color: white;
-  /* Колір тексту при наведенні */
 }
 
 .about-us {
   width: 100%;
   margin: 20vh 0;
-  /* Відступ зверху для розділу "Про нас" */
-  background: rgb(18, 177, 31);
-  /* Фоновий колір */
+  background-color: #f9f9f9;
   border-radius: 5px;
-  /* Радіус кутів */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Тінь блоку */
   text-align: center;
-  /* Вирівнювання тексту по центру */
   padding: 20vh 10% 10vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  .about-us {
-    background: rgb(237, 8, 8);
-  }
-}
 .about-us h2 {
   margin-bottom: 10px;
-  /* Відступ знизу заголовку "Про нас" */
   text-align: center;
   font-size: 40px;
   font-weight: 700;
@@ -282,9 +244,7 @@ section {
   text-align: justify;
   line-height: 1.2;
   letter-spacing: 1px;
-  /* Міжрядковий інтервал */
   margin: 10px;
-  /* Зовнішні відступи */
   font-size: 16px;
 }
 
@@ -292,9 +252,7 @@ section {
   .about-us p {
     line-height: 1.6;
     letter-spacing: normal;
-    /* Міжрядковий інтервал */
     margin: 10px;
-    /* Зовнішні відступи */
     font-size: 24px;
   }
 }
@@ -303,26 +261,19 @@ section {
   flex-direction: row;
   flex-wrap: wrap-reverse;
   align-items: center;
-  /* Вирівнювати по центру */
   justify-content: space-evenly;
-  /* Рівномірний розподіл між елементами */
   width: 100%;
   margin: 20vh 0;
   text-align: center;
   padding: 20vh 10% 10vh;
-  background-color: #ffffff;
-  /* Фоновий колір */
+  background-color: #f9f9f9;
   border-radius: 5px;
-  /* Радіус кутів */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  /* Тінь блоку */
 }
 
 .map-text {
   line-height: 1.6;
-  /* Міжрядковий інтервал */
   margin: 10px;
-  /* Зовнішні відступи */
   padding: 20px;
 }
 
@@ -366,7 +317,6 @@ section {
   text-align: justify;
   line-height: 1.2;
   letter-spacing: 1px;
-  /* Міжрядковий інтервал */
   font-size: 16px;
   margin-bottom: 20px;
   margin: 6vh auto;
@@ -422,40 +372,29 @@ section {
 .menu-item p {
   padding: 10px;
   margin-bottom: 10px;
-  background-color: 0;
 }
 
 .tab-header {
-  /* Відступ зверху для кнопок і контактної інформації */
   display: flex;
-  /* Відображати властивість блоку */
   flex-wrap: wrap;
   flex-direction: row;
-  /* Напрямок рядка */
   align-items: center;
-  /* Вирівнювати по центру */
   justify-content: space-evenly;
-  /* Рівномірний розподіл між елементами */
   width: 100%;
   background-color: white;
 }
 .tab-header .active {
   background-color: black;
-  /* Фоновий колір при наведенні */
   color: white;
-  /* Колір тексту при наведенні */
 }
 
 .footer {
   width: 100%;
   align-items: center;
   text-align: center;
-  background-color: #ffffff;
-  /* Фоновий колір */
+  background-color: #f9f9f9;
   margin: 0 auto;
-  /* Центрування по горизонталі */
   padding: 0 20px;
-  /* Внутрішні відступи */
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -464,27 +403,14 @@ section {
 }
 
 .contact-info__footer {
-  /* Відступ зверху для кнопок і контактної інформації */
   display: flex;
-  /* Відображати властивість блоку */
   flex-wrap: wrap;
   flex-direction: row;
-  /* Напрямок рядка */
   align-items: center;
-  /* Вирівнювати по центру */
   justify-content: space-evenly;
-  /* Рівномірний розподіл між елементами */
   width: 100%;
 }
 
-:root {
-  --background-color-light: rgb(237, 188, 188);
-  --text-color-light: black;
-  --background-color-dark: rgb(169, 7, 7);
-  --text-color-dark: white;
-}
-
-/* Загальні стилі */
 body {
   display: flex;
   flex-direction: column;

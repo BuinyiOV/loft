@@ -1,3 +1,5 @@
+//Navigation-----------------------------------------------------------------
+
 document.addEventListener('DOMContentLoaded', function () {
 	const btnAbout = document.querySelector('.btn-about');
 	const btnContactMap = document.querySelector('.btn-contact-map');
@@ -19,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
 		contactSection.scrollIntoView({ behavior: 'smooth' });
 	});
 });
+
+//Tabs---------------------------------------------------------------------------------------
 
 function openTab(event, tabName) {
 	var i, tabPane, tabLinks;
@@ -46,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-//burger menu
+//Burger menu---------------------------------------------------------------------------------
 
 document.addEventListener('DOMContentLoaded', function () {
 	const burgerButton = document.querySelector('.burger-button');
