@@ -478,9 +478,9 @@ section {
 }
 
 :root {
-  --background-color-light: white;
+  --background-color-light: rgb(237, 188, 188);
   --text-color-light: black;
-  --background-color-dark: black;
+  --background-color-dark: rgb(169, 7, 7);
   --text-color-dark: white;
 }
 
