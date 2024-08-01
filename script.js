@@ -46,3 +46,45 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//burger menu
+
+document.addEventListener('DOMContentLoaded', function () {
+	const burgerButton = document.querySelector('.burger-button');
+	const buttons = document.querySelector('.buttons');
+
+	// Функція для закриття меню з затримкою
+	function closeMenu() {
+		buttons.classList.add('animation-menu'); // Додає клас анімації
+		burgerButton.classList.remove('active');
+		setTimeout(function () {
+			buttons.classList.remove('active');
+			buttons.classList.remove('animation-menu');
+		}, 500); // Затримка
+	}
+
+	// Відкриття та закриття меню
+	burgerButton.addEventListener('click', function (event) {
+		if (buttons.classList.contains('active')) {
+			closeMenu();
+		} else {
+			buttons.classList.add('active');
+			burgerButton.classList.add('active');
+		}
+		event.stopPropagation();
+	});
+
+	// Закриття меню при кліку поза межами меню
+	document.addEventListener('click', function (event) {
+		const isClickInside = buttons.contains(event.target) || burgerButton.contains(event.target);
+		if (!isClickInside) {
+			closeMenu();
+		}
+	});
+
+	// Закриття меню при кліку на елементи меню
+	buttons.addEventListener('click', function (event) {
+		if (event.target.tagName === 'BUTTON' || event.target.tagName === 'A') {
+			closeMenu();
+		}
+	});
+});

@@ -1,7 +1,7 @@
 @import "__nullstyle";
 @import "__header";
 @import "__logo";
-@import "__buttons";
+@import "__navi";
 @import "__contact";
 @import "__about";
 @import "__map";
@@ -9,6 +9,7 @@
 @import "__footer";
 
 /* Загальні стилі */
+
 body {
 	display: flex;
 	flex-direction: column;
@@ -18,3 +19,5 @@ body {
 	overflow: auto;
 	width: 100%;
 }
+
+

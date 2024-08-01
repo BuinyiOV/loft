@@ -18,9 +18,23 @@
 }
 
 .menu-category h4 {
+
+	text-align: justify;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	/* Міжрядковий інтервал */
+	font-size: 16px;
+	
 	margin-bottom: 20px;
-	font-size: 20px;
 	margin: 6vh auto;
+}
+
+@media (min-width: 601px) {
+.menu-category h4 {
+		margin-bottom: 20px;
+		font-size: 20px;
+		margin: 6vh auto;
+	}
 }
 
 .menu-items {
