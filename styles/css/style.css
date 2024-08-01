@@ -165,6 +165,7 @@ section {
     width: 40px;
     height: 26px;
     margin: 30px auto;
+    color: #000;
   }
   .burger-button::before,
   .burger-button::after {
