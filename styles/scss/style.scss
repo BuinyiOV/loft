@@ -8,6 +8,13 @@
 @import "__menu";
 @import "__footer";
 
+:root {
+	--background-color-light: white;
+	--text-color-light: black;
+	--background-color-dark: black;
+	--text-color-dark: white;
+}
+
 /* Загальні стилі */
 
 body {

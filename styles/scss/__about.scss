@@ -1,27 +1,9 @@
-:root {
-	--background-color: white;
-	--text-color: black;
-
-	/* Встановлення кольорів для світлого режиму (за замовчуванням) */
-	background-color: var(--background-color);
-	color: var(--text-color);
-}
-
-/* Темна тема */
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background-color: black;
-		--text-color: white;
-	}
-}
-
-
 
 .about-us {
 	width: 100%;
 	margin: 20vh 0;
 	/* Відступ зверху для розділу "Про нас" */
-	background-color: var(--background-color);
+	background-color: var(--background-color-light);
 	/* Фоновий колір */
 	border-radius: 5px;
 	/* Радіус кутів */
@@ -30,6 +12,12 @@
 	text-align: center;
 	/* Вирівнювання тексту по центру */
 	padding: 20vh 10% 10vh;
+}
+
+@media (prefers-color-scheme: dark) {
+	.about-us {
+			background-color: var(--background-color-dark);
+		}
 }
 
 .about-us h2 {
