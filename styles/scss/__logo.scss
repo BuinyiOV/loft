@@ -11,6 +11,11 @@
 	background-color: white;
 }
 
+.bg img {
+	-webkit-filter:drop-shadow(0 0 2px rgb(0, 0, 0)) drop-shadow(0 0 2px rgb(0, 0, 0));
+filter: drop-shadow(0 0 2px rgb(0, 0, 0)) drop-shadow(0 0 2px rgb(0, 0, 0));
+}
+
 .logo {
 	width: 60%;
 }
