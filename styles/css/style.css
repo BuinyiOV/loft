@@ -430,7 +430,6 @@ section {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   border-radius: 5px;
   box-shadow: 0 0 5px #f9f9f9;
