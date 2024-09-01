@@ -9,25 +9,25 @@
 	width: 100%;
 }
 
-.btn-contact {
+.btn-contact,
+.btn-contact a {
 	min-width: 20vw;
 	padding: 10px 20px;
 	margin: 10px;
 	border: none;
 	text-decoration: none;
-	color: #000000;
+	color: #f9f9f9;
 	text-wrap: nowrap;
 	font-weight: 700;
 	font-size: 3vh;
 	text-align: center;
-	background-color: #f9f9f9;
+	background-color: black;
 	border-radius: 5px;
 	cursor: pointer;
-	transition: background-color 0.3s;
+	transition: 0.3s;
 	box-sizing: border-box;
 }
 
 .btn-contact:hover {
-	background-color: black;
-	color: white;
+	color: #d95a26;
 }

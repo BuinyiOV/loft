@@ -5,13 +5,17 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="sushi, restauracja, jedzenie, kuchnia, japonia, obiad, lunch, zamówienia">
 	<link rel="icon" href="#">
 	<title>Loft Sushi</title>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap">
 	<link rel="stylesheet" href="styles/css/style.css">
+	<script src="script.js"></script>
+	<script type="text/javascript" src="soga.js"></script>
 </head>
 
 <body>
+	<div id="sogaContainer"></div>
 	<section class="bg">
 		<img src="img/logo.png" alt="" class="logo">
 	</section>
@@ -24,10 +28,11 @@
 			<button class="btn btn-about">O nas</button>
 			<button class="btn btn-contact btn-contact-map">Kontakt</button>
 			<button class="btn btn-menu">Menu</button>
-			<button class="btn">Zamów online</button>
+			<input class="btn" name="test" onclick="sogaStart();" type="button" value="Zamówienie" />
 		</div>
 		<div class="contact-info">
-			<button class="btn-contact">+48 784 402 671</button>
+			<a href="tel:+48784402671" class="btn-contact">+48 784 402 671</a>
+			<a href="https://www.instagram.com/loftsushi_/" class="btn-contact">Instagram</a>
 			<a href="https://www.facebook.com/loftsushi" class="btn-contact">Facebook</a>
 		</div>
 	</section>
@@ -45,562 +50,450 @@
 	<section id="menu" class="menu">
 		<div class="tabs">
 			<div class="tab-header">
-				<button class="btn tab-link active" onclick="openTab(event, 'hosomaki')">Hosomaki</button>
-				<button class="btn tab-link" onclick="openTab(event, 'futomaki')">Futomaki</button>
-				<button class="btn tab-link" onclick="openTab(event, 'uramaki')">Uramaki</button>
-				<button class="btn tab-link" onclick="openTab(event, 'mini-uramaki')">Mini uramaki</button>
-				<button class="btn tab-link" onclick="openTab(event, 'datemaki')">Datemaki</button>
-				<button class="btn tab-link" onclick="openTab(event, 'caterpilar')">Caterpilar</button>
-				<button class="btn tab-link" onclick="openTab(event, 'nigiri')">Nigiri</button>
-				<button class="btn tab-link" onclick="openTab(event, 'sashimi-roll')">Sashimi roll</button>
+				<button class="btn tab-link active" onclick="openTab(event, 'zupy')">Zupy</button>
+				<button class="btn tab-link" onclick="openTab(event, 'przystawki')">Przystawki</button>
+				<button class="btn tab-link" onclick="openTab(event, 'dania główne')">Dania główne</button>
+				<button class="btn tab-link" onclick="openTab(event, 'dania-dla-dzieci')">Dania dla dzieci</button>
+				<button class="btn tab-link" onclick="openTab(event, 'zestawy')">Zestawy sushi</button>
+				<button class="btn tab-link" onclick="openTab(event, 'sahimi-tatar')">Sahimi / Tatar</button>
 			</div>
 			<div class="tab-content">
-				<div id="hosomaki" class="tab-pane active">
+				<div id="zupy" class="tab-pane active">
 					<div class="menu-category">
-						<h2>Hosomaki</h2>
-						<h4>Jednoskładnikowa rolka z glonem na zewnątrz, krojona na 6 krążków</h4>
+						<h2>Zupy</h2>
 						<div class="menu-items">
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>ZUPA MISO tradycyjne/z łososiem</h3>
+									<p>Zupa na bazie pasty sojowej z grzybami shitake, glonami wakame i tofu. W przypadku miso z
+										łososiem dodawane kawałki
+										ryby.
+									</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Miso .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>ZUPA GUY UDON</h3>
+									<p>Zupa na mięsnym bulionie z makaronem udon, tofu, glonami wakame, marchewką kimchi,
+										grzybami shitake,
+										przepiórczym
+										jajkiem i marynowaną wołowiną.
+									</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/GuyUdon1.png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>ZUPA TOM YUM z owocami morza</h3>
+									<p>Pikantna zupa z owocami morza
+										(Krewetki, mule, ośmiornica, kalmar), grzyby wodne, grzyby shitake, z dodatkiem mleka
+										kokosowego.</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/TomYum .png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="futomaki" class="tab-pane">
+				<div id="przystawki" class="tab-pane">
 					<div class="menu-category">
-						<h2>Futomaki</h2>
-						<h4>Wieloskładnikowa rolka z glonem na zewnątrz, krojona na 6 krążków</h4>
+						<h2>Przystawki</h2>
 						<div class="menu-items">
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>EDAMAME z solą morską</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Fasolka Edamame .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>MARCHEWKA KIMCHI</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Marchewka kimchi.png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>SAŁATKA z glonów wakame</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Sałatka wakame .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>SAŁATKA goma wakame</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Sałatka Goma wakame.png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>SAŁATKA z paluszków krabowych</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Sałatka z paluszków krabowych .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>WARZYWA w tempurze</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Warzywa w tempurze bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>KALMAR w tempurze</h3>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Kalmar tempura bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>ŁOSOŚ / DORADA w tempurze</h3>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Losos tempura bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>SAJGONKI z farszem wieprzowo-wołowym</h3>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Sajgonki .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>KREWETKI w tempurze</h3>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Krewetka tempura bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>GYOZA z farszem wieprzowo-wołowym / z krewetkami</h3>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Pierożki gioza 1.png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>PIEROŻKI z tatarem z łososia lub tuńczyka w tempurze</h3>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Pierożki z tatarem .png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="uramaki" class="tab-pane">
+				<div id="dania główne" class="tab-pane">
 					<div class="menu-category">
-						<h2>Uramaki</h2>
-						<h4>Odwrócona, wieloskładnikowa rolka z ryżem na zewnątrz, krojona na 6 krążków</h4>
+						<h2>Dania główne</h2>
 						<div class="menu-items">
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>MAKARON UDON Z WOŁOWINĄ</h3>
+									<p>Gruby makaron udon z warzywami, grzybami shitake jajkiem, marynowaną wołowiną i sosem
+										sojowo ostrygowym.
+									</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Udon z wołowiną .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>KACZKA ORIENTALNA</h3>
+									<p>Smażony filet z kaczki z makaronem udon, orzechami nerkowca, sosem Teriyaki i sezamem.
+									</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Kaczka z makaronem udon .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>ŁOSOŚ GRILLOWANY</h3>
+									<p>Grillowany filet z łososia z sosem bisque, podawany na ryżu z mlekiem kokosowym.</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Łosoś z ryżem .png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="mini-uramaki" class="tab-pane">
+				<div id="dania-dla-dzieci" class="tab-pane">
 					<div class="menu-category">
-						<h2>Mini uramaki</h2>
-						<h4>Odwrócona, wieloskładnikowa rolka z ryżem na zewnątrz (cieńsza niż zwykły uramak), krojona na 8
-							krążków</h4>
+						<h2>Dania dla dzieci</h2>
 						<div class="menu-items">
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>KURCZAK KARMELIZOWANY</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Danie dla dzieci łosoś.png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>KAWAŁKI ŁOSOSIA GRILLOWANE NA SŁODKO</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Danie dla dzieci łosoś.png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="datemaki" class="tab-pane">
+				<div id="zestawy" class="tab-pane">
 					<div class="menu-category">
-						<h2>Datemaki</h2>
-						<h4>Wieloskładnikowa rolka, na zewnątrz owinięta omletem zamiast glonu, krojona na 6 krążków</h4>
+						<h2>Zestawy sushi</h2>
 						<div class="menu-items">
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>LOFT 1 (17 szt.)</h3>
+									<p>futomaki łosoś [6 szt.] / nigiri łosoś + tuńczyk + ryba maślana [3 szt.] /
+										mini uramaki paluszek krabowy [8 szt.]</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Loft1 bez talerza .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>LOFT 2 (28 szt.)</h3>
+									<p>futomaki halibut w tempurze [6 szt.] / datemaki grillowany łosoś
+										na słodko [6 szt.] / mini uramaki łosoś [8 szt.] / mini uramaki paluszek
+										krabowy + łosoś na zewnątrz</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Loft2 bez talerza .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>LOFT 3 (32 szt.)</h3>
+									<p>futomaki tatar z łososia w tempurze [6 szt.] / datemaki pieczony
+										łosoś na ostro + melon [6 szt.] / futomaki mix [6 szt.] / uramaki
+										paluszek krabowy [6 szt.] / hosomaki marynowana rzepa [6 szt.] /
+										nigiri łosoś</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Loft3 bez talerza .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>LOFT 4 (34+6 szt.)</h3>
+									<p>kizumaki łosoś [6 szt.] / sashimi roll wege [8 szt.] / futomaki tuńczyk
+										[6 szt.] / mini uramaki pieczony łosoś na ostro + Jalapeno [ 8 szt.] /
+										hosomaki łosoś [6 szt.] / dodaj do zestawu za 1,- futomaki kalmar
+										w tempurze [6 szt.]</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Loft4 bez talerza .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>LOFT 5 (34+6 szt.)</h3>
+									<p>caterpillar łosoś + awokado na górze [6 szt.] / sashimi roll halibut
+										w tempurze [8 szt.] / datemaki sałatka krabowa [6szt.] / marynowany
+										łosoś na ostro w płatku ryżowym + melon [6 szt.] / uramaki tuńczyk
+										[6 szt.] / nigiri dorada [2 szt.] / dodaj do zestawu za 1,- futomaki
+										krewetka w tempurze [6 szt.]</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Loft5 bez talerza .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>LOFT 6 (40+12 szt.)</h3>
+									<p>futomaki tatar z łososia w tempurze [6 szt.] / futomaki ryba maślana
+										[6 szt.] futomaki tuńczyk „Hashi” w płatku sojowym [6 szt.] /
+										sashimi roll mix [8 szt.] / hosomaki unagi [6 szt.] / mini uramaki
+										paluszek krabowy [8 szt.] / dodaj do zestawu za 2,- futomaki krewetka
+										w tempurze [6 szt.] / caterpillar krewetka w tempurze + mango
+										na górze [6 szt.]</p>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
+									<img src="img/menu/Loft6 bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>LOFT 7 (54+6 szt.)</h3>
+									<p>nigiri łosoś [2szt.] / nigiri tuńczyk [2 szt.] / nigiri dorada [2szt.] /
+										futomaki dorada w tempurze [6 szt.] / futomaki łosoś [6 szt.] /
+										futomaki tuńczyk [6 szt.] / sashimi roll IKIGAI [8 szt.] / sashimi roll
+										łosoś [8 szt.] / mini uramaki rainbow [8 szt.] / kizumaki tuńczyk [6 szt.]
+										dodaj do zestawu za 1,- futomaki krewetka smażona na maśle
+										czosnkowym [6 szt.]</p>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Loft1 bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>LOFT 8 „NIGIRI” (8+2 szt.)</h3>
+									<p>łosoś gravlax / tuńczyk / dorada / węgorz / dodaj do zestawu
+										za 1,- krewetka gotowana</p>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Loft8 nigiri bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>LOFT 9 „WEGE” (22 szt.)</h3>
+									<p>futomaki warzywa [6 szt.] / sashimi roll warzywa [8 szt.] / hosomaki
+										awokado [6 szt.] / nigiri innari [2 szt.]</p>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Loft 9 Vege bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>LOFT 10 (20 szt.)</h3>
+									<p>futomaki tatar z łososia w tempurze [6 szt.] / futomaki halibut
+										w tempurze [6 szt,] / mini uramaki łosoś gravlax [8 szt.]</p>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Loft10 bez talerza .png" alt="">
+								</div>
+							</div>
+							<div class="menu-item">
+								<div class="menu-item_text">
+									<h3>LOFT 11 „GRILLOWANY” (24 szt.)</h3>
+									<p>futomaki halibut w tempurze [6 szt.] / datemaki grillowany łosoś
+										na słodko [6 szt.] / uramaki pasta z tuńczyka [6 szt.] / hosomaki
+										grillowany łosoś na ostro [6 szt.]</p>
+								</div>
+								<div class="menu-item_img">
+									<img src="img/menu/Loft11 grillowany bez talerza .png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="caterpilar" class="tab-pane">
+				<div id="sahimi-tatar" class="tab-pane">
 					<div class="menu-category">
-						<h2>Caterpilar</h2>
-						<h4>Uramak, do góry obłożony awokado/mango</h4>
+						<h2>Sahimi / Tatar</h2>
 						<div class="menu-items">
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>SASHIMI</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/roll.webp" alt="">
+									<img src="img/menu/Sashimi .png" alt="">
 								</div>
 							</div>
 							<div class="menu-item">
 								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
+									<h3>TATAR łosoś/tuńczyk</h3>
 								</div>
 								<div class="menu-item_img">
-									<img src="img/roll.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/roll.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/roll.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/roll.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/roll.webp" alt="">
+									<img src="img/menu/Tatar.png" alt="">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="nigiri" class="tab-pane">
-					<div class="menu-category">
-						<h2>Nigiri</h2>
-						<h4>Kulka ryżu na zewnątrz może być ryba, owoce morza lub warzywa. Porcja - 3szt</h4>
-						<div class="menu-items">
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="sashimi-roll" class="tab-pane">
-					<div class="menu-category">
-						<h2>Sashimi roll</h2>
-						<h4>Wieloskładnikowa rolka zawinienia w płatek ryżowy, nie zawiera ryżu, glonu. Krojona na 8 krążków
-						</h4>
-						<div class="menu-items">
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-							<div class="menu-item">
-								<div class="menu-item_text">
-									<h3>California Roll</h3>
-									<p>Opis California Roll.</p>
-									<p>Cena: 25 PLN</p>
-								</div>
-								<div class="menu-item_img">
-									<img src="img/nigiri.webp" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="information">
+		<div class="infotmation_item">
+			<img src="img/menu/Hosomaki bez talerza.png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Hosomaki</h3>
+				<p>Jednoskładnikowa rolka z glonem na zewnątrz, krojona na 6 krążków
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Futomaki bez talerza .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Futomaki</h3>
+				<p>Wieloskładnikowa rolka z glonem na zewnątrz, krojona na 6 krążków
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Uramaki bez talerza .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Uramaki</h3>
+				<p>Odwrócona, wieloskładnikowa rolka z ryżem na zewnątrz, krojona na 6 krążków
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Datemaki bez talerza .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Datemaki</h3>
+				<p>Wieloskładnikowa rolka, na zewnątrz owinięta omletem zamiast glonu, krojona na 6 krążków.
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Caterpillar bez talerza .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Caterpilar</h3>
+				<p>Uramak, do góry obłożony awokado/mango
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Nigiri bez talerza.png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Nigiri</h3>
+				<p>Kulka ryżu na zewnątrz może być ryba, owoce morza lub warzywa. Porcja -3szt
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Sashimi roll .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Sashimi roll</h3>
+				<p>Wieloskładnikowa rolka zawinienia w płatek ryżowy, nie zawiera ryżu, glonu. Krojona na 8 krążków</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Gunkan bez talerza .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Gunkan maki</h3>
+				<p>Kulka ryżu owinięta glonem nori. Wypełniona różnymi skladnikami do wyboru
+				</p>
+			</div>
+		</div>
+		<div class="infotmation_item">
+			<img src="img/menu/Sashimi .png" alt="">
+			<div class="infotmation_item_text">
+				<h3>Sahimi</h3>
+				<p>Sposób serwowania surowej ryby w plastrach, podawane z sosem ponzu</p>
 			</div>
 		</div>
 	</section>
@@ -624,11 +517,11 @@
 
 	<section class="footer">
 		<div class="contact-info__footer">
-			<button class="btn-contact">+48 784 402 671</button>
+			<a href="tel:+48784402671" class="btn-contact">+48 784 402 671</a>
+			<a href="https://www.instagram.com/loftsushi_/" class="btn-contact">Instagram</a>
 			<a href="https://www.facebook.com/loftsushi" class="btn-contact">Facebook</a>
 		</div>
 	</section>
-	<script src="script.js"></script>
 </body>
 
 </html>
