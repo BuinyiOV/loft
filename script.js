@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const btnAbout = document.querySelector('.btn-about');
 	const btnContactMap = document.querySelector('.btn-contact-map');
 	const btnMenu = document.querySelector('.btn-menu');
+	const btnOrder = document.querySelector('.btn-order');
 
 
 	btnAbout.addEventListener('click', function () {
@@ -14,6 +15,11 @@ document.addEventListener('DOMContentLoaded', function () {
 	btnMenu.addEventListener('click', function () {
 		const menuSection = document.getElementById('menu');
 		menuSection.scrollIntoView({ behavior: 'smooth' });
+	});
+
+	btnOrder.addEventListener('click', function () {
+		const orderSection = document.getElementById('order');
+		orderSection.scrollIntoView({ behavior: 'smooth' });
 	});
 
 	btnContactMap.addEventListener('click', function () {

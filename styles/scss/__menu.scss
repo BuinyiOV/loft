@@ -65,7 +65,7 @@
 	flex-wrap: nowrap;
 		
 		&_img {
-			max-width: 50%;
+			max-width: 90%;
 			overflow: hidden;
 			display: flex;
 			justify-content: center;
@@ -92,6 +92,10 @@
 	.menu-item {
 		height: 500px;
 		flex-direction: row;
+
+		&_img {
+				max-width: 50%;
+			}
 	}
 }
 
