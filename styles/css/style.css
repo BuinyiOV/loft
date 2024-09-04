@@ -487,6 +487,8 @@ section {
 }
 
 .order-text {
+  display: flex;
+  flex-direction: column;
   line-height: 1.6;
   margin: 10px;
   padding: 20px;
@@ -503,8 +505,25 @@ section {
 }
 
 .order-btn {
+  background-color: black;
+  color: #f9f9f9;
   font-size: 30px;
   margin: 20px 0;
+  min-width: 20vw;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+  text-wrap: nowrap;
+  font-weight: 700;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-sizing: border-box;
+}
+
+.order-btn:hover {
+  color: #d95a26;
 }
 
 .footer {
